@@ -25,7 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-	max-width: 800px;
+	max-width: 600px;
 	margin: 0px auto;
 	padding: 12px 24px;
 }
@@ -50,4 +50,20 @@ h1 span {
     display: block;
     line-height: 42px;
     font-size: 48px;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 600px;
+}
+.options {
+    aspect-ratio: 313 / 278;
+    background-image: url(./images/bg-triangle.svg);
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+    width: 50%;
+}
+.options button {
+    position: absolute;
 }
