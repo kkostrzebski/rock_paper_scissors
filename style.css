@@ -71,6 +71,7 @@ main {
 .options .button {
 	position: absolute;
 	width: 50%;
+	cursor: pointer;
 }
 .button {
 	display: flex;
@@ -79,36 +80,75 @@ main {
 	aspect-ratio: 1/1;
 	border: none;
 	border-radius: 50%;
+	box-shadow: inset 0px -5px 0px rgba(0,0,0,0.15);
 }
 
 .button__image-container {
-	width: 80%;
-	height: 80%;
-	border-radius: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 80%;
+	height: 80%;
 	background-color: var(--color-main);
-	cursor: pointer;
+	border-radius: 50%;
+	
+	box-shadow: inset 0px 5px 0px rgba(0,0,0,0.15);
 }
 .button img {
-	background-color: var(--color-main);
+	width: 50%;
 }
 .button--paper {
 	background: linear-gradient(var(--color-paper));
-	left: 0;
-	top: 0;
-	transform: translate(-50%, -50%);
 }
 .button--scissors {
 	background: linear-gradient(var(--color-scissors));
-	right: 0;
-	top: 0;
-	transform: translate(50%, -50%);
 }
 .button--rock {
 	background: linear-gradient(var(--color-rock));
+}
+.options .button--paper {
+	top: 0;
+	left: 0;
+	transform: translate(-50%, -50%);
+}
+.options .button--scissors {
+
+	top: 0;
+	right: 0;
+	transform: translate(50%, -50%);
+}
+.options .button--rock {
+	bottom: 0;
 	left: 50%;
 	transform: translate(-50%, 50%);
-	bottom: 0;
+}
+
+.fight {
+	display: flex;
+
+	color: var(--color-main);
+}
+.pick {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	width: 50%;
+}
+.fight .button {
+	width: 60%;
+}
+
+.pick__title {
+	display: block;
+	text-align: center;
+	padding-bottom: 24px;
+	width: 100%;
+}
+.pick__placeholder {
+	aspect-ratio: 1/1;
+	background: rgba(0,0,0,0.25);
+	border-radius: 50%;
+	width: 50%;
+	
 }
