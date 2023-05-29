@@ -16,48 +16,66 @@
 <body>
     <header>
         <h1>
-            <span>Rock</span>
-            <span>Paper</span>
-            <span>Scissors</span>
+            <span>ROCK</span>
+            <span>PAPER</span>
+            <span>SCISSORS</span>
         </h1>
         <div class="score">
-            <span>Score</span>
+            <span>SCORE</span>
             <strong class="points">12</strong>
         </div>
     </header>
     <main>
-        <!-- <section class="options">
-            <button class="button button--paper">
+        <section class="options">
+            <button class="button button--paper" data-pick="paper">
                 <div class="button__image-container">
-                    <img src="./images/icon-paper.svg" alt="paper">
+                    <img src="./images/icon-paper.svg" alt="Paper" />
                 </div>
             </button>
-            <button class="button button--scissors">
+            <button class="button button--scissors" data-pick="scissors">
                 <div class="button__image-container">
-                    <img src="./images/icon-scissors.svg" alt="scissors">
+                    <img src="./images/icon-scissors.svg" alt="Scissors" />
                 </div>
             </button>
-            <button class="button button--rock">
+            <button class="button button--rock" data-pick="rock">
                 <div class="button__image-container">
-                    <img src="./images/icon-rock.svg" alt="rock">
+                    <img src="./images/icon-rock.svg" alt="Rock" />
                 </div>
             </button>
-        </section> -->
+        </section>
         <section class="fight">
-            <div class="pick">
-                <span class="pick__title">You Picked</span>
-                <div class="button button--paper">
-                    <div class="button__image-container">
-                        <img src="./images/icon-paper.svg" alt="paper">
+            <div class="pick pick--player">
+                <span class="pick__title">YOU PICKED</span>
+                <div class="pick__container pick__container--player">
+                    <div class="button button--paper">
+                        <div class="button__image-container">
+                            <img src="./images/icon-paper.svg" alt="Paper" />
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="pick">
-                <span class="pick__title">The housse picked</span>
-                <div class="pick__placeholder"></div>
+            <div class="pick pick--ai">
+                <span class="pick__title">THE HOUSSE PICKED</span>
+                <div class="pick__container pick__container--ai"></div>
+            </div>
+
+            <div class="result">
+                <span class="result__text"></span>
+                <button class="result__button" tabindex="-1">
+                    PLAY AGAIN
+                </button>
             </div>
         </section>
     </main>
+    <!-- <div class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by <a href="#">Your Name Here</a>.
+        </div> -->
+    <script src="./main.js"></script>
 </body>
 
 </html>

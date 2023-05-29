@@ -152,3 +152,7 @@ main {
 	width: 50%;
 	
 }
+
+.hidden {
+	display: none;
+}
